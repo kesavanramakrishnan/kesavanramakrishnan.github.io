@@ -1,5 +1,5 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-kesavanram.weebly.com	TRUE	/	FALSE	1999999999	is_mobile	0
-kesavanram.weebly.com	TRUE	/	FALSE	1999999999	language	en
+kesavanmain	TRUE	/	FALSE	1999999999	is_mobile	0
+kesavanmain	TRUE	/	FALSE	1999999999	language	en
 
