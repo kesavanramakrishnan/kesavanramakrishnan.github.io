@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .hanging-indent {
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+  }
+}

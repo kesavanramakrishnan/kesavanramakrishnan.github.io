@@ -3,7 +3,7 @@ const projects = [
     title: "Hybrid SwinUNet for MRI Reconstruction",
     description: "Designed a hybrid SwinUNet for MRI reconstruction using the fastMRI dataset, improving PSNR and SSIM.",
     poster: "/Accelerated MRI Reconstruction SwinUNet Poster.pdf",
-    paper: "#" // <-- Replace '#' with your paper link
+    paper: "/Accelerated MRI Reconstruction with SwinUNet.pdf"
   },
   {
     title: "TreeCycle",
