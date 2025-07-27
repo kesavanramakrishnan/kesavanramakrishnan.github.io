@@ -28,7 +28,7 @@ const Hero = () => {
               <a href="https://www.linkedin.com/in/kesavan-ramakrishnan/" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors">
                 <LinkedInIcon className="w-8 h-8" />
               </a>
-              <a href="/Kesavan Resume 2027.pdf" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors font-bold flex items-center h-8 ml-1">
+              <a href="/Kesavan Resume July 2025.pdf" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors font-bold flex items-center h-8 ml-1">
                 Resume
               </a>
             </div>
