@@ -21,16 +21,16 @@ const Hero = () => {
             <p className="mt-6 text-xl text-light/80 max-w-lg">
               Passionate about the applications of AI and developing efficient, scalable machine learning systems.
             </p>
-            <div className="mt-8 flex justify-center md:justify-start items-center space-x-6">
+            <div className="mt-8 flex justify-center md:justify-start space-x-6">
               <a href="https://github.com/kesavanramakrishnan" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors">
                 <GitHubIcon className="w-8 h-8" />
               </a>
               <a href="https://www.linkedin.com/in/kesavan-ramakrishnan/" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors">
                 <LinkedInIcon className="w-8 h-8" />
               </a>
-              <a href="/Kesavan Resume July 2025.pdf" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors font-bold flex items-center h-8 ml-1">
+              {/* <a href="/Kesavan Resume 2027.pdf" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors font-bold">
                 Resume
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
