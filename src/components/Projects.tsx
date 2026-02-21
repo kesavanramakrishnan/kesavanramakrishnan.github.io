@@ -32,12 +32,12 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div key={index} className="flex-shrink-0 w-full sm:w-96 bg-primary rounded-lg shadow-lg p-8 hover:shadow-2xl transition-shadow flex flex-col">
               <div className="flex-grow">
+                <h3 className="text-2xl font-bold text-light mb-2">{project.title}</h3>
                 {project.badge && (
                   <span className="inline-block bg-accent text-light text-sm font-bold px-3 py-1 rounded-full mb-3">
-                    {project.badge}
+                    &#9733; {project.badge}
                   </span>
                 )}
-                <h3 className="text-2xl font-bold text-light mb-4">{project.title}</h3>
                 <p className="text-light/80 mb-6">{project.description}</p>
               </div>
               {project.poster && project.paper ? (
