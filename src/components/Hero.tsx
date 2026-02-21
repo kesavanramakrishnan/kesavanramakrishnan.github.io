@@ -1,6 +1,7 @@
 import ProfilePic from '../assets/Profile_pic.JPG';
 import GitHubIcon from './icons/GitHubIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
+import GoogleScholarIcon from './icons/GoogleScholarIcon';
 
 const Hero = () => {
   return (
@@ -28,9 +29,9 @@ const Hero = () => {
               <a href="https://www.linkedin.com/in/kesavan-ramakrishnan/" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors">
                 <LinkedInIcon className="w-8 h-8" />
               </a>
-              {/* <a href="/Kesavan Resume 2027.pdf" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors font-bold">
-                Resume
-              </a> */}
+              <a href="https://scholar.google.com/citations?user=aINWJroAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors">
+                <GoogleScholarIcon className="w-8 h-8" />
+              </a>
             </div>
           </div>
         </div>

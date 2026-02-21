@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-primary py-8">
+    <footer className="bg-secondary py-8">
     </footer>
   );
 };

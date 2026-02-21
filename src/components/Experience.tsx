@@ -2,7 +2,7 @@ const experiences = [
   {
     role: "AI/ML Systems Research Intern",
     company: "AMD Research & Development",
-    date: "June 2025 – Present",
+    date: "June 2025 – December 2025",
     location: "San Jose, CA",
     description: [
       "Implemented a Stream-K style, work-centric backward pass for attention, inspired by Lean Attention, to resolve work-imbalance and improve performance for long-sequence LLMs on current and future Instinct GPUs.",
@@ -17,7 +17,9 @@ const experiences = [
     date: "March 2025 – Present",
     location: "Stanford, CA",
     description: [
-      "Conducted research on Domain-Specific Languages (DSLs) for high-performance GPU programming."
+      "Researching LLM-driven approaches for hardware-aware GPU kernel performance optimization.",
+      "Developing techniques for cross-architecture kernel porting and transpilation using large language models.",
+      "Building tools that leverage LLMs to reason about low-level hardware constraints for high-performance kernel generation."
     ]
   },
   {

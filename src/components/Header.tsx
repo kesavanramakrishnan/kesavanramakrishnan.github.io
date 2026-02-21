@@ -7,6 +7,7 @@ const Header = () => {
           <ul className="flex items-center space-x-8">
             <li><a href="#about" className="text-light/70 hover:text-light transition-colors">About</a></li>
             <li><a href="#experience" className="text-light/70 hover:text-light transition-colors">Experience</a></li>
+            <li><a href="#publications" className="text-light/70 hover:text-light transition-colors">Publications</a></li>
             <li><a href="#projects" className="text-light/70 hover:text-light transition-colors">Projects</a></li>
             <li><a href="#contact" className="text-light/70 hover:text-light transition-colors">Contact</a></li>
           </ul>
