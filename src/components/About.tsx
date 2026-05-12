@@ -1,22 +1,26 @@
 const About = () => {
   return (
-    <section id="about" className="bg-primary py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-light mb-12">About Me</h2>
-        <div className="max-w-3xl mx-auto text-lg text-light/80 space-y-6">
-          <p>
-            I'm an EECS student at Stanford interested in ML systems. My current research at the Stanford AI Lab focuses on using LLMs for hardware-aware GPU kernel optimization and cross-architecture kernel porting (transpilation). I'm exploring how language models can reason about low-level hardware constraints to generate and optimize high-performance GPU kernels across different architectures.
-          </p>
-          <p>
-            Previously, I was an AI/ML Research Intern at AMD Research, where I worked on optimizing attention kernels for LLMs on AMD GPUs, specifically targeting load balancing attention. There, I also worked on <em>SwizzlePerf</em>, an LLM-driven system to target spatial optimization for AMD GPUs.
-          </p>
-          <p>
-            Ultimately, I'm very interestd in low-level systems and understanding the foundations of hardware and software, to better reason about how we can build better AI systems from the ground up.
-            </p>
-        </div>
+    <section id="about">
+      <h2 className="text-lg font-semibold mb-3">About</h2>
+      <div className="space-y-3 text-light/80">
+        <p>
+          I'm incoming as a Research Intern at <strong className="text-light font-semibold">Together AI</strong> on the <strong className="text-light font-semibold">Frontier Performance</strong> team.
+        </p>
+        <p>
+          I'm a computer science student interested in <strong className="text-light font-semibold">machine learning systems</strong> and <strong className="text-light font-semibold">hardware-software codesign</strong>.
+        </p>
+        <p>
+          I've worked on things like <strong className="text-light font-semibold">LLMs for hardware-aware GPU kernel optimization</strong> and <strong className="text-light font-semibold">cross-architecture kernel transpilation</strong> for porting between architectures and vendors.
+        </p>
+        <p>
+          Previously, I was a Research Intern at <strong className="text-light font-semibold">AMD Research</strong>, where I worked on optimizing attention kernels for LLMs on AMD GPUs, with a focus on load balancing. I also contributed to <em className="text-light font-semibold not-italic">SwizzlePerf</em>, an LLM-driven system for spatial optimization on AMD GPUs.
+        </p>
+        <p>
+          More broadly, I'm interested in how <strong className="text-light font-semibold">systems and models shape each other</strong> — how models can be designed to exploit the hardware beneath them, and vice versa.
+        </p>
       </div>
     </section>
   );
 };
 
-export default About; 
+export default About;

@@ -1,6 +1,13 @@
 const experiences = [
   {
-    role: "AI/ML Systems Research Intern",
+    role: "Research Intern (Incoming)",
+    company: "Together AI, Frontier Performance Team",
+    date: "Summer 2026",
+    location: "San Francisco, CA",
+    description: []
+  },
+  {
+    role: "Research Intern",
     company: "AMD Research & Development",
     date: "June 2025 – December 2025",
     location: "San Jose, CA",
@@ -12,7 +19,7 @@ const experiences = [
     ]
   },
   {
-    role: "ML Systems Researcher",
+    role: "Undergraduate Researcher",
     company: "Stanford Artificial Intelligence Lab",
     date: "March 2025 – Present",
     location: "Stanford, CA",
@@ -28,8 +35,8 @@ const experiences = [
     date: "December 2024 – Present",
     location: "Stanford, CA",
     description: [
-      "Teaching assistant for Stanford’s largest introductory programming class in Python (CS 106A/106B).",
-      "Hosted weekly sections for students and debugged students’ programs during weekly office hours (LaIR).",
+      "Teaching assistant for Stanford's largest introductory programming class in Python (CS 106A/106B).",
+      "Hosted weekly sections for students and debugged students' programs during weekly office hours (LaIR).",
       "Graded weekly assignments, held interactive feedback sessions w/ students to provide a better learning experience."
     ]
   },
@@ -48,31 +55,27 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-secondary py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-light mb-16">Experience</h2>
-        <div className="max-w-4xl mx-auto space-y-12">
-          {experiences.map((exp, index) => (
-            <div key={index} className="border-l-2 border-accent pl-8">
-              <div className="flex justify-between items-baseline">
-                <h3 className="text-2xl font-bold text-light">{exp.role}</h3>
-                <p className="text-md font-medium text-light/70">{exp.date}</p>
-              </div>
-              <div className="flex justify-between items-baseline mb-4">
-                <p className="text-lg font-semibold text-light/90">{exp.company}</p>
-                <p className="text-md font-medium text-light/70">{exp.location}</p>
-              </div>
-              <ul className="list-disc list-inside space-y-2 text-light/80 hanging-indent">
+    <section id="experience">
+      <h2 className="text-lg font-semibold mb-3">Experience</h2>
+      <div className="space-y-6">
+        {experiences.map((exp, index) => (
+          <div key={index}>
+            <div className="flex justify-between items-baseline gap-4">
+              <p><span className="font-semibold">{exp.company}</span><span className="text-light/70">, {exp.role}</span></p>
+              <p className="text-sm text-light/60 whitespace-nowrap">{exp.date}</p>
+            </div>
+            {exp.description.length > 0 && (
+              <ul className="mt-2 space-y-1 text-light/80 text-sm list-disc pl-5">
                 {exp.description.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-            </div>
-          ))}
-        </div>
+            )}
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default Experience; 
+export default Experience;

@@ -1,3 +1,5 @@
+const SELF = "Kesavan Ramakrishnan";
+
 const publications = [
   {
     title: "SwizzlePerf: Hardware-Aware LLMs for GPU Kernel Performance Optimization",
@@ -9,27 +11,35 @@ const publications = [
   },
 ];
 
+const renderAuthors = (authors: string) => {
+  const parts = authors.split(SELF);
+  return parts.map((part, i) => (
+    <span key={i}>
+      {part}
+      {i < parts.length - 1 && <strong className="text-light font-semibold">{SELF}</strong>}
+    </span>
+  ));
+};
+
 const Publications = () => {
   return (
-    <section id="publications" className="bg-primary py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-light mb-16">Publications</h2>
-        <div className="max-w-4xl mx-auto space-y-12">
-          {publications.map((pub, index) => (
-            <div key={index} className="border-l-2 border-accent pl-8">
-              <h3 className="text-2xl font-bold text-light">{pub.title}</h3>
-              <p className="text-light/80 mt-2">{pub.authors}</p>
-              {pub.venue && <p className="text-accent font-semibold mt-2">&#9733; {pub.venue}</p>}
-              <div className="flex flex-row space-x-4 mt-4">
-                {pub.links.map((link, i) => (
-                  <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:underline">
-                    {link.label} &rarr;
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+    <section id="publications">
+      <h2 className="text-lg font-semibold mb-3">Publications</h2>
+      <div className="space-y-4">
+        {publications.map((pub, index) => (
+          <div key={index}>
+            <p className="font-semibold">{pub.title}</p>
+            <p className="text-sm text-light/70 mt-1">{renderAuthors(pub.authors)}</p>
+            {pub.venue && <p className="text-sm text-light/70 mt-1"><span className="text-light/90 font-medium">{pub.venue}</span></p>}
+            <p className="text-sm mt-1 space-x-3">
+              {pub.links.map((link, i) => (
+                <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-light text-light/80">
+                  {link.label}
+                </a>
+              ))}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );

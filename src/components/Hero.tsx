@@ -1,43 +1,26 @@
 import ProfilePic from '../assets/Profile_pic.JPG';
-import GitHubIcon from './icons/GitHubIcon';
-import LinkedInIcon from './icons/LinkedInIcon';
-import GoogleScholarIcon from './icons/GoogleScholarIcon';
 
 const Hero = () => {
   return (
-    <section className="bg-secondary pt-40 pb-20">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-          <div className="md:order-2">
-            <img
-              src={ProfilePic}
-              alt="Kesavan Ramakrishnan"
-              className="w-64 h-64 rounded-lg shadow-2xl object-cover transform hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div className="md:order-1 text-center md:text-left">
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-light leading-tight">
-              EE+CS Student at Stanford
-            </h1>
-            <p className="mt-6 text-xl text-light/80 max-w-lg">
-              Passionate about the applications of AI and developing efficient, scalable machine learning systems.
-            </p>
-            <div className="mt-8 flex justify-center md:justify-start space-x-6">
-              <a href="https://github.com/kesavanramakrishnan" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors">
-                <GitHubIcon className="w-8 h-8" />
-              </a>
-              <a href="https://www.linkedin.com/in/kesavan-ramakrishnan/" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors">
-                <LinkedInIcon className="w-8 h-8" />
-              </a>
-              <a href="https://scholar.google.com/citations?user=aINWJroAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-light/70 hover:text-light transition-colors">
-                <GoogleScholarIcon className="w-8 h-8" />
-              </a>
-            </div>
-          </div>
-        </div>
+    <section className="flex items-start gap-6">
+      <img
+        src={ProfilePic}
+        alt="Kesavan Ramakrishnan"
+        className="w-24 h-24 object-cover"
+      />
+      <div>
+        <h1 className="text-2xl font-bold">Kesavan Ramakrishnan</h1>
+        <p className="text-light/70 mt-1"><span className="text-light/90">CS + EE</span> student at Stanford</p>
+        <p className="text-light/60 mt-1 text-sm">kesavanr at stanford dot edu</p>
+        <p className="text-light/70 mt-3 text-sm space-x-4">
+          <a href="https://github.com/kesavanramakrishnan" target="_blank" rel="noopener noreferrer" className="underline hover:text-light">github</a>
+          <a href="https://www.linkedin.com/in/kesavan-ramakrishnan/" target="_blank" rel="noopener noreferrer" className="underline hover:text-light">linkedin</a>
+          <a href="https://scholar.google.com/citations?user=aINWJroAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="underline hover:text-light">scholar</a>
+          <a href="mailto:kesavanr@stanford.edu" className="underline hover:text-light">email</a>
+        </p>
       </div>
     </section>
   );
 };
 
-export default Hero; 
+export default Hero;

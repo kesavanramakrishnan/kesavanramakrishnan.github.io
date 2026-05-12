@@ -18,41 +18,35 @@ const projects = [
   },
   {
     title: "Web Games",
-    description: "A collection of web games demonstrating mastery of different computer science fundamentals and unique algorithms.",
+    description: "A collection of web games I made when I was young and bored.",
     link: "https://github.com/kesavanramakrishnan/web_games"
   }
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-secondary py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-light mb-12">Recent Work</h2>
-        <div className="flex overflow-x-auto space-x-8 py-4">
-          {projects.map((project, index) => (
-            <div key={index} className="flex-shrink-0 w-full sm:w-96 bg-primary rounded-lg shadow-lg p-8 hover:shadow-2xl transition-shadow flex flex-col">
-              <div className="flex-grow">
-                <h3 className="text-2xl font-bold text-light mb-2">{project.title}</h3>
-                {project.badge && (
-                  <span className="inline-block bg-accent text-light text-sm font-bold px-3 py-1 rounded-full mb-3">
-                    &#9733; {project.badge}
-                  </span>
-                )}
-                <p className="text-light/80 mb-6">{project.description}</p>
-              </div>
+    <section id="projects">
+      <h2 className="text-lg font-semibold mb-3">Projects</h2>
+      <div className="space-y-5">
+        {projects.map((project, index) => (
+          <div key={index}>
+            <p>
+              <span className="font-semibold">{project.title}</span>
+              {project.badge && <span className="text-light/60"> — {project.badge}</span>}
+            </p>
+            <p className="text-sm text-light/80 mt-1">{project.description}</p>
+            <p className="text-sm mt-1 space-x-3">
               {project.poster && project.paper ? (
-                <div className="flex flex-row space-x-4 mt-auto">
-                  <a href={project.poster} target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:underline">Poster</a>
-                  <a href={project.paper} target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:underline">Paper</a>
-                </div>
+                <>
+                  <a href={project.poster} target="_blank" rel="noopener noreferrer" className="underline hover:text-light text-light/80">poster</a>
+                  <a href={project.paper} target="_blank" rel="noopener noreferrer" className="underline hover:text-light text-light/80">paper</a>
+                </>
               ) : (
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:underline mt-auto">
-                  See Project &rarr;
-                </a>
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="underline hover:text-light text-light/80">link</a>
               )}
-            </div>
-          ))}
-        </div>
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );
