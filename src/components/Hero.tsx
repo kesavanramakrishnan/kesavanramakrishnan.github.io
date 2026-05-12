@@ -16,7 +16,6 @@ const Hero = () => {
           <a href="https://github.com/kesavanramakrishnan" target="_blank" rel="noopener noreferrer" className="underline hover:text-light">github</a>
           <a href="https://www.linkedin.com/in/kesavan-ramakrishnan/" target="_blank" rel="noopener noreferrer" className="underline hover:text-light">linkedin</a>
           <a href="https://scholar.google.com/citations?user=aINWJroAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="underline hover:text-light">scholar</a>
-          <a href="mailto:kesavanr@stanford.edu" className="underline hover:text-light">email</a>
         </p>
       </div>
     </section>
